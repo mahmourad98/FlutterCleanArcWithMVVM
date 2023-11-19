@@ -4,8 +4,8 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.17.0 <2.19.0"
-  flutter: ">=3.0.0 <3.7.2"
+  sdk: ">=2.17.0 <3.0.0"
+  flutter: ">=3.0.0 <3.10.0"
 
 dependencies:
   flutter:
@@ -32,15 +32,13 @@ dependencies:
   stacked: any
   stacked_services: any
   get_it: any
-  observable_ish: any
+  rxdart: any
   #NETWORK
   dio: any
-  dio_interceptors: any
-  dio_logging_interceptor: any
+  built_value: any
+  dio_http_cache: any
   dio_cache_interceptor: any
-  #dio_http_cache: any#
   pretty_dio_logger: any
-  dio_logger: any
   connectivity_plus: any
   #Utils
   intl: any
@@ -48,7 +46,6 @@ dependencies:
   json_annotation: any
   freezed_annotation: any
   equatable: any
-  built_value: any
   dartz: any
   logger: any
   flutter_phoenix: any
@@ -58,6 +55,7 @@ dependencies:
   path: any
   path_provider: any
   shared_preferences: any
+  flutter_secure_storage: any
   location: any
   #Testing
   mockito: any
@@ -72,20 +70,22 @@ dev_dependencies:
   freezed: any
 
 dependency_overrides:
+  device_preview: 1.1.0
   flutter_hooks: 0.18.6
-  stacked: 3.2.0
-  stacked_services: 1.0.4
-  #json_annotation: 4.8.0#
-  #freezed_annotation: 2.2.0#
-  #json_serializable: 6.6.1#
-  #freezed: 2.3.2#
-  #built_value: 8.4.4#
+  stacked: 3.3.0
+  stacked_services: 1.3.0
+  json_annotation: 4.8.1
+  freezed_annotation: 2.4.1
+  json_serializable: 6.6.2
+  freezed: 2.3.5
   flutter_phoenix:
     git:
       url: https://github.com/mahmourad98/flutter_phoenix_plus.git
       ref: 9f91fd7
   fluttertoast:
-    git: https://github.com/mahmourad98/FlutterToast-Android-S-VersionFix.git
+    git:
+      url: https://github.com/mahmourad98/FlutterToast-Android-S-VersionFix.git
+      ref: 92c6e68
 
 flutter:
   uses-material-design: true
