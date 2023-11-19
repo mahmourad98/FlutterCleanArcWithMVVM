@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
-import 'package:untitled05/extras/shared-view-components/custom_loader_widget.dart';
-import 'package:untitled05/extras/shared-view-components/error_visualisation_widget.dart';
+import 'package:untitled05/core/presentation/shared-view-components/custom_loader_widget.dart';
+import 'package:untitled05/core/presentation/shared-view-components/error_visualisation_widget.dart';
 
 class GenericStateWrapperOnViewModel<T extends BaseViewModel> extends ViewModelWidget<T> {
   final Widget payloadWidget;
